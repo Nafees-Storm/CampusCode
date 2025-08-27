@@ -1,91 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Welcome to My Website</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #333;
-    }
 
-    header {
-      background: #750101;
-      color: #fff;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="style.css">
+    <title>CODEX</title>
+    <!--font-awesome fot icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 
-    nav a {
-      color: #fff;
-      margin-left: 1rem;
-      text-decoration: none;
-    }
-
-    .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 90vh;
-      background: linear-gradient(to right, #6a11cb, #2575fc);
-      color: white;
-      text-align: center;
-      padding: 0 2rem;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-
-    .hero a {
-      background: white;
-      color: #2575fc;
-      padding: 0.75rem 1.5rem;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #750101;
-      color: #aaa;
-    }
-  </style>
+    <!--swiper css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
+
 <body>
-<div>merge example</div>
-  <header>
-    <div class="logo">Luton Dev and Code</div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+            <!--Header/Navbar -->
+        <header>
+            <nav class = "navbar section-content ">
+                <a href="*" class = nav-logo>
+                    <h2 class="logo-text">
 
-  <section class="hero">
-    <h1>Welcome to My Website</h1>
-    <p>Start your journey with us today.</p>
-    <a href="#get-started">Get Started</a>
-  </section>
+                        🐝 CAMPUS CODE 
+                    </h2>
+                
+                </a>
+                <ul class="nav-menu">
+                    <button id="menu-close-button"  class="fas fa-times"></button>
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link"> Home </a>
+                    </li>
 
-  <footer>
-    &copy; 2025 MySite. All rights reserved.
-  </footer>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link"> About </a>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <a href="#members" class="nav-link"> Members </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link"> Contact </a>
+                    </li>
+
+                </ul>
+                <button id="menu-open-button"  class="fas fa-bars"></button>
+
+            </nav>
+        </header>
+
+        <main>
+
+            <!--Hero section-->
+            <section class="hero-section" id="home">
+                <div class="section-content">
+                    <div class="hero-detail">
+                        <h2 class="title">Welcome to code Meetup</h2>
+                        <h3 class="subtitle"> Organized by Asad Ullah</h3>
+                        <p class="description">Hi, I’m Asad – Software Engineer, Lecturer, and Researcher <br>I’m an experienced software engineer with a background in academic research<br> and university-level teaching.<br> I’ve worked on real-world tech projects and enjoy helping others start their journey </p>
+                    </div>
+                    <div class="hero-image-wrapper">
+                        <img src="Images/logo icon .png" alt="Hero" class="hero-image">
+                    </div>
+                </div>
+            </section>
+
+
+            <!--About section-->
+            <section class="about-section"  id="about">
+                <dev class="section-content">
+                    <dev class="about-image-wrapper">
+                        <img src="Images/About us .png" alt="About" class="about-image">
+                    </dev>
+                    
+                    <dev class="about-detail">
+                        <h2 class="section-title">About Us</h2>
+                        <p class="text"> This group is for anyone in and around Luton who is interested in learning to code, improving their digital skills, or exploring opportunities in the tech industry. Whether you're just starting, changing careers, or looking to connect with others on a similar path, our free workshops and events provide a friendly, supportive environment for learning and growth. Powered by Code Features, our mission is to make coding education accessible, practical, and community-driven. Join us to kickstart your journey, meet like-minded people, and build something meaningful together.
+                        </p>
+                    </dev>
+                    <div class="social-link-list">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+
+                </dev>
+            </section>
+
+            <!--Members-->
+            <section class="members-section"  id="members">
+                <h2 class="section-title">Members</h2>
+                <div class="section-content">
+                    <div class="slider-container swiper">
+                        <div class="slider-wrapper">
+                            <ul class="members-list swiper-wrapper ">
+                                <li class="members swiper-slide ">
+                                    <img src="Images/male.png" alt="user" class="user-image">
+                                    <h3 class="name"></h3>
+                                </li>
+
+                                <li class="members swiper-slide ">
+                                    <img src="Images/female.png" alt="user" class="user-image">
+                                    <h3 class="name"></h3>
+                                </li>
+                                <li class="members swiper-slide ">
+                                    <img src="Images/female.png" alt="user" class="user-image">
+                                    <h3 class="name"></h3>
+                                </li>
+                                <li class="members swiper-slide ">
+                                    <img src="Images/male.png" alt="user" class="user-image">
+                                    <h3 class="name"></h3>
+                                </li>
+                                <li class="members swiper-slide ">
+                                    <img src="Images/male.png" alt="user" class="user-image">
+                                    <h3 class="name"></h3>
+                                </li>
+                                <li class="members swiper-slide ">
+                                    <img src="Images/female.png" alt="user" class="user-image">
+                                    <h3 class="name"></h3>
+                                </li>
+                                
+                            </ul>
+
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-side-button  swiper-button-prev"></div>
+                            <div class="swiper-side-button swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--Contact section-->
+            <section class="contact-section" id="contact">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="section-content">
+                    <ul class="contact-info-list"></ul>
+                    <li class="contact-info">
+                            <i class ="fa-solid fa-location-crosshairs"> </i>
+                            <p>University of Bedfordshire
+                                Park Square, LU1 3JU
+                                Luton </p>
+
+                            <i class ="fa-regular fa-envelope"> @email</i>
+                            <p> </p>
+
+                            <i class ="fa-solid fa-phone"> </i>
+                            <p> 07722111</p>
+                            <i class ="fa-regular fa-clock"> </i>
+                            <p>Wednesday 4:00pm-6:00pm </p>
+                            <i class ="fa-solid fa-globe"> </i>
+                            <p>https://www.meetup.com/luton-devcode-meetup/members/</p>
+                       
+                    </li>
+                </div>
+            </section>
+
+
+            <!--Footer section-->
+            <footer class="footer-section">
+                <div class="section-content">
+                    <p class="copyright-text">© Campus Code</p>
+                </div>
+                <div class="social-link-list">
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                    
+                </div>
+            </footer>
+        </main>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script src="script.js"></script>
+
 
 </body>
+
+
+
+
 </html>
+
